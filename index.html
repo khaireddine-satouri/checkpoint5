@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <link rel="stylesheet" href="./css/style.css">
+   <script src="https://kit.fontawesome.com/8c3203e62c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <center>
+      <script>var sum=null;</script>
+        <div class="all-element">
+         <h1>Veillez consultez votre panier ! <br></h1>
+         <div class="flex-container">
+        <div class="elem">article 1 <br>
+            <i class="fas fa-cart-arrow-down" style="font-size:100px;
+            margin: 10px;
+            
+            "></i>
+          <p ><span id="prix1">10</span>DT</p>
+          <ul><button id="add1">+</button>
+            <ul><button id="sub1">-</button>
+                <p id="quantity1"></p>
+            <script>
+              var sum=null;
+                var quantity1=0;
+                document.getElementById("quantity1").innerHTML="Quantité : "+quantity1;
+                //var x=document.getElementById("prix").innerHTML;
+                document.getElementById("add1").addEventListener("click",addprix);
+                function addprix(){
+                  quantity1+=1;
+                  var y=Number(document.getElementById("prix1").innerHTML);
+                     sum+=y;
+                     document.getElementById("quantity1").innerHTML="Quantité : "+quantity1;
+                document.getElementById("solde").innerHTML="Prix Total : "+sum+"DT";
+                  
+                }
+                document.getElementById("sub1").addEventListener("click",subprix);
+                function subprix(){
+                  
+                  var y=Number(document.getElementById("prix1").innerHTML);
+                  if( quantity1>0){sum-=y;
+                    quantity1-=1;
+                    document.getElementById("quantity1").innerHTML="Quantité : "+quantity1;}
+                     else{quantity1=0;
+                        document.getElementById("quantity1").innerHTML="Quantité : "+0;}
+                document.getElementById("solde").innerHTML="Prix Total : "+sum+"DT";
+                  
+                }
+                
+            </script>
+        </div>
+        <div class="elem">article 2 <br>
+            <i class="fas fa-cart-arrow-down" style="font-size:100px;
+            margin: 10px;
+            
+            "></i>
+               <p ><span id="prix2">15</span>DT</p>
+               <ul><button id="add2">+</button>
+                <ul><button id="sub2">-</button>
+                    <p id="quantity2"></p>
+                <script>
+                  var sum=null;
+                    var quantity2=0;
+                    document.getElementById("quantity2").innerHTML="Quantité : "+quantity2;
+                    //var x=document.getElementById("prix").innerHTML;
+                    document.getElementById("add2").addEventListener("click",addprix);
+                    function addprix(){
+                      quantity2+=1;
+                      var y=Number(document.getElementById("prix2").innerHTML);
+                         sum+=y;
+                         document.getElementById("quantity2").innerHTML="Quantité : "+quantity2;
+                    document.getElementById("solde").innerHTML="Prix Total : "+sum+"DT";
+                      
+                    }
+                    document.getElementById("sub2").addEventListener("click",subprix);
+                    function subprix(){
+                      
+                      var y=Number(document.getElementById("prix2").innerHTML);
+                      if( quantity2>0){sum-=y;
+                        quantity2-=1;
+                        document.getElementById("quantity2").innerHTML="Quantité : "+quantity2;}
+                         else{quantity2=0;
+                            document.getElementById("quantity2").innerHTML="Quantité : "+0;}
+                    document.getElementById("solde").innerHTML="Prix Total : "+sum+"DT";
+                      
+                    }
+                   
+                </script>
+        </div>
+        <div class="elem">article 3 <br>
+            <i class="fas fa-cart-arrow-down" style="font-size:100px;
+            margin: 10px;
+            
+            "></i>
+             <p ><span id="prix3">20</span>DT</p>
+             <ul><button id="add3">+</button>
+                <ul><button id="sub3">-</button>
+                    <p id="quantity3"></p>
+                <script>
+                  var sum=null;
+                    var quantity3=0;
+                    document.getElementById("quantity3").innerHTML="Quantité : "+quantity3;
+                    //var x=document.getElementById("prix").innerHTML;
+                    document.getElementById("add3").addEventListener("click",addprix);
+                    function addprix(){
+                      quantity3+=1;
+                      var y=Number(document.getElementById("prix3").innerHTML);
+                         sum+=y;
+                         document.getElementById("quantity3").innerHTML="Quantité : "+quantity3;
+                    document.getElementById("solde").innerHTML="Prix Total : "+sum+"DT";
+                      
+                    }
+                    document.getElementById("sub3").addEventListener("click",subprix);
+                    function subprix(){
+                      
+                      var y=Number(document.getElementById("prix3").innerHTML);
+                      if( quantity3>0){sum-=y;
+                        quantity3-=1;
+                        document.getElementById("quantity3").innerHTML="Quantité : "+quantity3;}
+                         else{quantity3=0;
+                            document.getElementById("quantity3").innerHTML="Quantité : "+0;}
+                    document.getElementById("solde").innerHTML="Prix Total : "+sum+"DT";
+                      
+                    }
+                </script>
+        </div>
+        <div class="elem">article 4 <br>
+            <i class="fas fa-cart-arrow-down" style="font-size:100px;
+            margin: 10px;
+            
+            "></i>
+            <p ><span id="prix4">25</span>DT</p>
+            <ul><button id="add4">+</button>
+                <ul><button id="sub4">-</button>
+                    <p id="quantity4"></p>
+                <script>
+                  var sum=null;
+                    var quantity4=0;
+                    document.getElementById("quantity4").innerHTML="Quantité : "+quantity4;
+                    //var x=document.getElementById("prix").innerHTML;
+                    document.getElementById("add4").addEventListener("click",addprix);
+                    function addprix(){
+                      quantity4+=1;
+                      var y=Number(document.getElementById("prix4").innerHTML);
+                         sum+=y;
+                         document.getElementById("quantity4").innerHTML="Quantité : "+quantity4;
+                    document.getElementById("solde").innerHTML="Prix Total : "+sum+"DT";
+                      
+                    }
+                    document.getElementById("sub4").addEventListener("click",subprix);
+                    function subprix(){
+                      
+                      var y=Number(document.getElementById("prix4").innerHTML);
+                      if( quantity4>0){sum-=y;
+                        quantity4-=1;
+                        document.getElementById("quantity4").innerHTML="Quantité : "+quantity4;}
+                         else{quantity4=0;
+                            document.getElementById("quantity4").innerHTML="Quantité : "+0;}
+                    document.getElementById("solde").innerHTML="Prix Total : "+sum+"DT";
+                      
+                    }
+                    
+                </script>
+
+        </div>
+        <div class="elem">article 5 <br>
+            <i class="fas fa-cart-arrow-down" style="font-size:100px;
+            margin: 10px;
+            
+            "></i>
+            <p ><span id="prix5">30</span>DT</p>
+            <ul><button id="add5">+</button>
+                <ul><button id="sub5">-</button>
+                    <p id="quantity5"></p>
+                <script>
+                  var sum=null;
+                    var quantity5=0;
+                    document.getElementById("quantity5").innerHTML="Quantité : "+quantity5;
+                    //var x=document.getElementById("prix").innerHTML;
+                    document.getElementById("add5").addEventListener("click",addprix);
+                    function addprix(){
+                      quantity5+=1;
+                      var y=Number(document.getElementById("prix5").innerHTML);
+                         sum+=y;
+                         document.getElementById("quantity5").innerHTML="Quantité : "+quantity5;
+                    document.getElementById("solde").innerHTML="Prix Total : "+sum+"DT";
+                      
+                    }
+                    document.getElementById("sub5").addEventListener("click",subprix);
+                    function subprix(){
+                      
+                      var y=Number(document.getElementById("prix5").innerHTML);
+                      if( quantity5>0){sum-=y;
+                        quantity5-=1;
+                        document.getElementById("quantity5").innerHTML="Quantité : "+quantity1;}
+                         else{quantity5=0;
+                            document.getElementById("quantity5").innerHTML="Quantité : "+0;}
+                    document.getElementById("solde").innerHTML="Prix Total : "+sum+"DT";
+                      
+                    }
+                    
+                </script>
+        </div>
+        <div class="elem">article 6<br>
+            <i class="fas fa-cart-arrow-down" style="font-size:100px;
+            margin: 10px;
+            
+            "></i>
+            <p ><span id="prix6">35</span>DT</p>
+            <ul><button id="add6">+</button>
+                <ul><button id="sub6">-</button>
+                    <p id="quantity6"></p>
+                <script>
+                  var sum=null;
+                    var quantity6=0;
+                    document.getElementById("quantity6").innerHTML="Quantité : "+quantity1;
+                    //var x=document.getElementById("prix").innerHTML;
+                    document.getElementById("add6").addEventListener("click",addprix);
+                    function addprix(){
+                      quantity6+=1;
+                      var y=Number(document.getElementById("prix6").innerHTML);
+                         sum+=y;
+                         document.getElementById("quantity6").innerHTML="Quantité : "+quantity6;
+                    document.getElementById("solde").innerHTML="Prix Total : "+sum+"DT";
+                      
+                    }
+                    document.getElementById("sub6").addEventListener("click",subprix);
+                    function subprix(){
+                      
+                      var y=Number(document.getElementById("prix6").innerHTML);
+                      if( quantity6>0){sum-=y;
+                        quantity6-=1;
+                        document.getElementById("quantity6").innerHTML="Quantité : "+quantity6;}
+                         else{quantity6=0;
+                            document.getElementById("quantity6").innerHTML="Quantité : "+0;}
+                    document.getElementById("solde").innerHTML="Prix Total : "+sum+"DT";
+                      
+                    }
+                    
+                </script>
+        </div>
+        <div class="elem">article 7 <br>
+            <i class="fas fa-cart-arrow-down" style="font-size:100px;
+            margin: 10px;
+            
+            "></i>
+             <p ><span id="prix7">40</span>DT</p>
+             <ul><button id="add7">+</button>
+                <ul><button id="sub7">-</button>
+                    <p id="quantity7"></p>
+                <script>
+                  var sum=null;
+                    var quantity7=0;
+                    document.getElementById("quantity7").innerHTML="Quantité : "+quantity7;
+                    //var x=document.getElementById("prix").innerHTML;
+                    document.getElementById("add7").addEventListener("click",addprix);
+                    function addprix(){
+                      quantity7+=1;
+                      var y=Number(document.getElementById("prix7").innerHTML);
+                         sum+=y;
+                         document.getElementById("quantity7").innerHTML="Quantité : "+quantity7;
+                    document.getElementById("solde").innerHTML="Prix Total : "+sum+"DT";
+                      
+                    }
+                    document.getElementById("sub7").addEventListener("click",subprix);
+                    function subprix(){
+                      
+                      var y=Number(document.getElementById("prix7").innerHTML);
+                      if( quantity7>0){sum-=y;
+                        quantity7-=1;
+                        document.getElementById("quantity7").innerHTML="Quantité : "+quantity7;}
+                         else{quantity7=0;
+                            document.getElementById("quantity7").innerHTML="Quantité : "+0;}
+                    document.getElementById("solde").innerHTML="Prix Total : "+sum+"DT";
+                      
+                    }
+                    
+                </script>
+        </div>
+        <div class="elem">article 8 <br>
+            <i class="fas fa-cart-arrow-down" style="font-size:100px;
+            margin: 10px;
+            
+            "></i>
+          <p ><span id="prix8">45</span>DT</p>
+          <ul><button id="add8">+</button>
+            <ul><button id="sub8">-</button>
+                <p id="quantity8"></p>
+            <script>
+              var sum=null;
+                var quantity8=0;
+                document.getElementById("quantity8").innerHTML="Quantité : "+quantity8;
+                //var x=document.getElementById("prix").innerHTML;
+                document.getElementById("add8").addEventListener("click",addprix);
+                function addprix(){
+                  quantity8+=1;
+                  var y=Number(document.getElementById("prix8").innerHTML);
+                     sum+=y;
+                     document.getElementById("quantity8").innerHTML="Quantité : "+quantity8;
+                document.getElementById("solde").innerHTML="Prix Total : "+sum+"DT";
+                  
+                }
+                document.getElementById("sub8").addEventListener("click",subprix);
+                function subprix(){
+                  
+                  var y=Number(document.getElementById("prix8").innerHTML);
+                  if( quantity8>0){sum-=y;
+                    quantity8-=1;
+                    document.getElementById("quantity8").innerHTML="Quantité : "+quantity8;}
+                     else{quantity8=0;
+                        document.getElementById("quantity8").innerHTML="Quantité : "+0;}
+                document.getElementById("solde").innerHTML="Prix Total : "+sum+"DT";
+                  
+                }
+                
+            </script>
+        </div>
+         </div>
+         <h2 id="solde"></h2>
+        </div>
+        
+    
+    </center>
+</body>
+</html>
